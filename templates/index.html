@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generador de Grafo</title>
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Complejidad Algoritmica - Grupo 2</h1>
+    <div class="row">
+      <div class="nombres-nosotros">
+        <h4 class="subtitle">Luciano Achin - Sebastián Bustinza - Carlos Llanos</h4>
+      </div>
+    </div>
+
+    <hr class="separator">
+
+    <p class="description">
+      Elegir el nombre adecuado para un hijo es una decisión importante y personal para los padres. Sin embargo, a menudo puede ser difícil tomar esta decisión debido a la enorme cantidad de opciones disponibles y a las preferencias individuales de cada uno. Un programa que pueda ayudar a los padres a elegir los nombres para sus hijos, basándose principalmente en la sonoridad y popularidad de estos.
+    </p>
+
+    <hr class="separator">
+
+    <div class="input-group">
+      <input type="number" id="cantidad-nodos" class="form-control" placeholder="Ingrese la cantidad de nodos">
+      <button id="generar-btn" class="btn btn-primary">Generar Grafo</button>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <h3>Nombres populares:</h3>
+        <ul id="nombres-populares"></ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Nombres afines:</h3>
+        <ul id="nombres-afines"></ul>
+      </div>
+    </div>
+
+    <div class="graph-container">
+      <h3>Grafo:</h3>
+      <img id="imagen-grafo" src="" alt="Grafo">
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="static/script.js"></script>
+
+  <script>
+    function scrollToBottom() {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
+</body>
+</html>
