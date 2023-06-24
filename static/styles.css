@@ -1,0 +1,119 @@
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin: 30px;
+  font-weight: 600;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 18px;
+}
+
+.nombres {
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #545454;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.genero-group {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.nombres-nosotros {
+  justify-content: center;
+}
+
+.input-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.graph-container {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#genero {
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #007bff;
+  color: whitesmoke;
+}
+
+.nombres-pop{
+  display: flex;
+  justify-content: center;
+}
+
+h4.subtitle {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+p.description {
+  font-size: 20px;
+}
+
+hr.separator {
+  height: 2px;
+  background-color: #505050;
+}
+
+h1.title {
+  font-size: 70px;
+}
+
+/* Nuevas adiciones */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #545454;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333333;
+}
