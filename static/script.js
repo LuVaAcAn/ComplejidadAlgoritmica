@@ -21,11 +21,11 @@ function generarGrafo() {
         nombresPopulares.innerHTML += '<li>' + nombre[0] + ' (Apariciones: ' + nombre[1] + ')</li>';
       });
 
-      // Actualizar los nombres afines
-      var nombresAfines = document.getElementById('nombres-afines');
-      nombresAfines.innerHTML = '';
-      response.nombres_afines.forEach(function (afin) {
-        nombresAfines.innerHTML += '<li>' + afin[0] + ' : ' + ' (Afinidad: ' + afin[1] + '%)</li>';
+      // Actualizar los nombres menos populares
+      var nombresMenosPopulares = document.getElementById('nombres-menos-populares');
+      nombresMenosPopulares.innerHTML = '';
+      response.nombres_menos_populares.forEach(function (nombre) {
+      nombresMenosPopulares.innerHTML += '<li>' + nombre[0] + ' (Apariciones: ' + nombre[1] + ')</li>';
       });
     },
     error: function (error) {
