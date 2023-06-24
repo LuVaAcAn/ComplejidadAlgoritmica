@@ -70,6 +70,10 @@ def generar_grafo():
         nombres_populares = sorted(grafo.nodes(data=True), key=lambda x: x[1]['cant_apariciones'], reverse=True)[:10]
         nombres_populares = [(nombre[0], nombre[1]['cant_apariciones']) for nombre in nombres_populares]
 
+        # Obtener nombres menos populares
+        nombres_menos_populares = sorted(grafo.nodes(data=True), key=lambda x: x[1]['cant_apariciones'], reverse=False)[:10]
+        nombres_menos_populares = [(nombre[0], nombre[1]['cant_apariciones']) for nombre in nombres_menos_populares]
+
         # Generar la imagen del grafo
         fig, ax = plt.subplots(figsize=(15, 15))
         posiciones = nx.kamada_kawai_layout(grafo_sin_puentes)
@@ -81,7 +85,7 @@ def generar_grafo():
         plt.close()
 
     # Devolver los nombres populares y la ruta de la imagen generada
-    respuesta = {'nombres_populares': nombres_populares, 'imagen_grafo': 'static/grafo.png'}
+    respuesta = {'nombres_populares': nombres_populares, 'imagen_grafo': 'static/grafo.png', 'nombres_menos_populares': nombres_menos_populares}
     return jsonify(respuesta)
 
 def calcular_similitud(nombre1, nombre2):
